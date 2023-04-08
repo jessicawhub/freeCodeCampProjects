@@ -10,9 +10,11 @@
     <p>Thank you for taking the time to help us improve the platform!</p>
     <form method="post" id="survey-form"></form>
     <fieldset>
-      <label>Name <input required id="name" type="text" /> </label>
-      <label>Email <input required id="email" type="email" /> </label>
-      <label>Age (optional) <input id="number" type="number" />
+      <label  for="name">Name <input placeholder="Enter your name" required id="name-label" name="name" type="text" /> </label>
+      <label for="email">Email <input placeholder="Enter your email" required id="email-label" type="email" name="email" /> </label>
+      <label for="age">Age (optional) <input placeholder="Age" name="age" id="number-label" type="number" />
     </fieldset>
+    
+
   </body>
 </html>
