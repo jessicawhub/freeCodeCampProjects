@@ -8,12 +8,14 @@
   <body>
     <h1>freeCodeCamp Survey Form</h1>
     <p>Thank you for taking the time to help us improve the platform!</p>
+
     <form method="post" id="survey-form"></form>
     <fieldset>
       <label  for="name">Name <input placeholder="Enter your name" required id="name-label" name="name" type="text" /> </label>
       <label for="email">Email <input placeholder="Enter your email" required id="email-label" type="email" name="email" /> </label>
-      <label for="age">Age (optional) <input placeholder="Age" name="age" id="number-label" type="number" />
-      <label for="role">Which option best describes your current role? 
+      <label for="age">Age (optional) <input min="11" max="120" placeholder="Age" name="age" id="number-label" type="number" /> </label>
+      
+      <p>Which option best describes your current role?</p>
       <select id="role" name="role"> 
       <option value="">Select current role</option> 
       <option value="1">Student</option>
@@ -22,6 +24,13 @@
       <option value="4">Prefer not to say</option>
       <option value="5">Other</option>
       
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label for="recommend"><input id="definitely" type="radio" 
+        name="degree" value="definitely" />Definitely</label>
+        <label for="recommend"><input id="maybe" type="radio" name="degree" value="maybe" />
+        Maybe</label>
+        <Label for="recommend" ><input id="not-sure" type="radio" name="degree" value="not-sure" />
+        Not sure</Label>
     </fieldset>
     
 
