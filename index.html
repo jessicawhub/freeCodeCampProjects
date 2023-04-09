@@ -8,10 +8,10 @@
   </head>
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform!</p>
-
+    <p id="description">Thank you for taking the time to help us improve the platform!</p>
+ 
     <form method="post" id="survey-form">
-      <fieldset>
+      <fieldset style="width: 700px; margin: 0px auto;">
         <label id="name-label" for="name">Name
           <input placeholder="Enter your name" required id="name" name="name" type="text" />
         </label><br>
@@ -22,7 +22,7 @@
           <input min="11" max="120" placeholder="Age" name="age" id="number" type="number" />
         </label><br>
 
-        <p id="description">Which option best describes your current role?</p>
+        <p>Which option best describes your current role?</p>
         <select id="dropdown" name="role">
           <option value="">Select current role</option>
           <option value="1">Student</option>
