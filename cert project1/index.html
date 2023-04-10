@@ -11,7 +11,7 @@
     <p id="description">Thank you for taking the time to help us improve the platform!</p>
  
     <form method="post" id="survey-form">
-      <fieldset style="width: 700px; margin: 0px auto;">
+      <fieldset>
         <label id="name-label" for="name">Name
           <input placeholder="Enter your name" required id="name" name="name" type="text" />
         </label><br>
@@ -97,14 +97,15 @@
   Additional courses
 </label><br>
 
-<p>Any comments or suggestions?</p>
+<div class="spacer"></div>
 
 </label>
-        <label for="comment">
-          <textarea id="comment" name="comment" rows="7" cols="70" placeholder="Enter your comment here..."></textarea>
-        </label>
+        <label for="comment">Any comments or suggestions?</label>
+<div class="form-group">
+    <textarea id="comment" name="comment" rows="7" cols="70" placeholder="Enter your comment here..."></textarea>
+    <input id="submit" type="submit" value="Submit" />
+</div>
 
-        <input id="submit" type="submit" value="Submit" /><br>
 
 
       </fieldset>
